@@ -3,7 +3,9 @@ package br.com.fiap.heranca.models;
 //Generalização - Tudo que é genérico
 //Sobrecarga de métodos: Método com mesmo nome e assinatura diferente
 //Na herança temos a SOBRESCRITA DE MÉTODOS
-public class Pessoa {
+
+//Classe abstrata -> É um modelo, mas não pode ser instanciada
+public abstract class Pessoa {
     protected String nome;
     protected String cpf;
     private String email;
