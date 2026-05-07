@@ -15,3 +15,13 @@ _
 +src/br/com/fiap/heranca/models/Gerente.java,e\3\e331ff29d29466652e9135cdf7b87d12f352b587
 \
 ,src/br/com/fiap/heranca/models/Vendedor.java,9\e\9e5989ef303ce5afcc9dadaa6d28f575abd5f5b9
+`
+0src/br/com/fiap/heranca/enums/StatusVeiculo.java,c\0\c08eb58a5186dbcfbef18f5476747edc633c1cff
+[
++src/br/com/fiap/heranca/models/Veiculo.java,c\1\c10b9a47ed578cc4767c03842e4363ae2ad08921
+\
+,src/br/com/fiap/heranca/models/Caminhao.java,8\8\88238a0433b96e8fe8b0c2339b458d70a77bc3e3
+W
+'src/br/com/fiap/heranca/models/Van.java,5\2\52064ef06b60bba1bb70924e2e88ecf3bba58f5d
+_
+/src/br/com/fiap/heranca/tests/TesteVeiculo.java,1\a\1a994be7e6e30e54c25c52ec4ee617c804de527f
