@@ -1,0 +1,22 @@
+
+Š
+java:S1192Q"mDefine a constant instead of duplicating this literal "============================================" 5 times.(ÂÒÌ›8š«ÒÒä3
+X	java:S1259"<This block of commented-out lines of code should be removed.(µ°×¡8¨«ÒÒä3
+G	java:S106Q"+Replace this use of System.out by a logger.(ÂÒÌ›8­«ÒÒä3
+L	java:S106U"+Replace this use of System.out by a logger.(Ç­›İúÿÿÿÿ8­«ÒÒä3
+G	java:S106W"+Replace this use of System.out by a logger.(£†µ†8®«ÒÒä3
+L	java:S106Y"+Replace this use of System.out by a logger.(‚À·üúÿÿÿÿ8®«ÒÒä3
+G	java:S106]"+Replace this use of System.out by a logger.(ÂÒÌ›8¯«ÒÒä3
+F	java:S106_"+Replace this use of System.out by a logger.(¥ôX8¯«ÒÒä3
+G	java:S106b"+Replace this use of System.out by a logger.(§÷Ãš8°«ÒÒä3
+G	java:S106f"+Replace this use of System.out by a logger.(ÂÒÌ›8°«ÒÒä3
+G	java:S106g"+Replace this use of System.out by a logger.(áô—8°«ÒÒä3
+L	java:S106i"+Replace this use of System.out by a logger.(áÔ¤Ãûÿÿÿÿ8±«ÒÒä3
+G	java:S106l"+Replace this use of System.out by a logger.(ÂÒÌ›8±«ÒÒä3
+L	java:S106m"+Replace this use of System.out by a logger.(ôÊèºúÿÿÿÿ8±«ÒÒä3
+G	java:S106p"+Replace this use of System.out by a logger.(ÔËµ8²«ÒÒä3
+G	java:S106t"+Replace this use of System.out by a logger.(ÂÒÌ›8²«ÒÒä3
+L	java:S106u"+Replace this use of System.out by a logger.(úöŸµúÿÿÿÿ8²«ÒÒä3
+L	java:S106{"+Replace this use of System.out by a logger.(à˜Ù¸ùÿÿÿÿ8³«ÒÒä3
+G	java:S106}"+Replace this use of System.out by a logger.(¾÷ïÖ8³«ÒÒä3
+M	java:S106€"+Replace this use of System.out by a logger.(ˆÄ¢åÿÿÿÿÿ8´«ÒÒä3
