@@ -1,0 +1,13 @@
+
+
+java:S1854	"ERemove this useless assignment to local variable "quantidadeDigitos".(û´¼Ãøÿÿÿÿ8–š×ÿ3J$f218ab49-65d0-4315-b92b-69abe804304f
+½
+java:S6204"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8šš×ÿ3J$664244eb-f442-464e-9b44-a5b3e7d09208
+‰
+java:S1612"AReplace this lambda with method reference 'CharSequence::length'.(óÛÛÂüÿÿÿÿ8œš×ÿ3J$8e4d6c45-2546-4f4b-9166-9e97999a323d
+m	java:S106"+Replace this use of System.out by a logger.(ä¾Úç8š×ÿ3J$65da5aa5-90f8-4d3c-a5f2-b764905e6d3f
+½
+java:S6204"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8Ÿš×ÿ3J$a2bc03f1-e12c-443a-bf49-6de1ce859fdd
+‚
+java:S1612"?Replace this lambda with method reference 'Collection::stream'.(¶­åÂ8Ÿš×ÿ3J$ce16abbf-1b8d-4e15-8269-2e5b87db7224
+r	java:S106"+Replace this use of System.out by a logger.(ú¡ôİøÿÿÿÿ8š—×ÿ3J$aa5dc827-0505-4826-89a5-c31eb3ef12c0

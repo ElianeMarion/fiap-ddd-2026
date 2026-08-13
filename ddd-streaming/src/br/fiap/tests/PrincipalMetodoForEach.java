@@ -4,7 +4,9 @@ import br.fiap.models.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class PrincipalMetodoForEach {
     public static void main(String[] args) {
@@ -91,13 +93,31 @@ public class PrincipalMetodoForEach {
             });
         });
         System.out.println("============================================");
-
+        System.out.println("1. Exibir todas as séries, suas temporadas e episódios com STREAM");
+        series.stream()
+                .forEach(serie -> {
+                    System.out.println("Série: " + serie.getNome());
+                    serie.getTemporadas().stream()
+                            .forEach(temp -> {
+                                System.out.println("  Temporada " + temp.getNumeroTemporada() + ":");
+                                temp.getEpisodios().stream()
+                                        .forEach(ep -> System.out.println(
+                                                "    Ep " + ep.getNumero() + " — " + ep.getNome()
+                                        ));
+                            });
+                });
         System.out.println("2. Exibir as séries ativas");
         series.forEach(ativa -> {
             if (ativa.isAtiva()) {
                 System.out.println("Ativa: " + ativa.getNome());
             }
         });
+
+        System.out.println("============================================");
+        System.out.println("Exibir as séries ativas com stream");
+        series.stream()
+                .filter(Serie::isAtiva)
+                .forEach(ativa -> System.out.println("Ativa: " + ativa.getNome()));
 
         System.out.println("============================================");
         System.out.println("3.  Exibir a quantidade de temporadas por série.");
@@ -112,6 +132,11 @@ public class PrincipalMetodoForEach {
                 System.out.println("Finalizada: " + finalizadas.getNome());
             }
         });
+        System.out.println("============================================");
+        System.out.println("4.  Exibir uma lista de séries finalizadas com STREAM");
+        series.stream()
+                .filter(s-> !s.isAtiva())
+                .forEach(f-> System.out.println("Finalizada: " + f.getNome()));
 
         System.out.println("============================================");
         System.out.println("5.  Ao selecionar uma série finalizada, exibir todas as temporadas e seus respectivos episódios.");
@@ -129,8 +154,39 @@ public class PrincipalMetodoForEach {
                             )
                     );
                 });
-                // Nota importante sobre o item 5 abaixo!
+
             }
         });
+
+        System.out.println("============================================");
+        System.out.println("6.  Listar os filmes filtrados pelo tempo de duração");
+        int duracaoMin = 90;
+        int duracaoMax = 120;
+        filmes.stream()
+                .filter(f-> f.getDuracaoEmMinutos() >= duracaoMin && f.getDuracaoEmMinutos() <= duracaoMax)
+                .sorted(Comparator.comparingInt(Filme::getDuracaoEmMinutos))
+                .forEach(f-> System.out.println(f.getNome() + " - " + f.getDuracaoEmMinutos() + " min."));
+
+        System.out.println("===============================================");
+        System.out.println("7 - Contar quantos episódios têm avaliação acima de 8.0");
+        long contador = todasAsTemporadas.stream()
+                .flatMap(t-> t.getEpisodios().stream())
+                .filter(ep -> ep.getAvaliacao() > 8)
+                .count();
+        System.out.println("Quantidade de pisódios com avaliação acima de 8: " + contador);
+
+        System.out.println("==========================================================");
+        System.out.println("8 - Exibir os melhores episódios de uma temporada de acordo com a avaliação.");
+        int temporadaEscolhida = 2;
+        series.stream()
+                .flatMap(s-> s.getTemporadas().stream())
+                .filter(t-> t.getNumeroTemporada() == temporadaEscolhida)
+                .flatMap(t-> t.getEpisodios().stream())
+                .sorted(Comparator.comparingDouble(Episodio::getAvaliacao).reversed())
+                .limit(5)
+                .forEach(ep-> System.out.println("Ep " + ep.getNumero() + " - " + ep.getNome() + "("+ ep.getAvaliacao()+")"));
+
+
+
     }
 }

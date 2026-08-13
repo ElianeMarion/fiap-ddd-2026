@@ -1,9 +1,14 @@
 
-
-java:S1186G"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ë¥À½8ËÛÒä3
-G	java:S106<"+Replace this use of System.out by a logger.(º†ñÂ8ÓÛÒä3
-G	java:S106="+Replace this use of System.out by a logger.(–‡¢ª8ÔÛÒä3
-L	java:S106>"+Replace this use of System.out by a logger.(ã¿¬÷ıÿÿÿÿ8ÔÛÒä3
-L	java:S106?"+Replace this use of System.out by a logger.(ëË‚Íşÿÿÿÿ8ÔÛÒä3
-G	java:S106A"+Replace this use of System.out by a logger.(ñ·‘×8ÕÛÒä3
-G	java:S106C"+Replace this use of System.out by a logger.(³‹ñø8ÕÛÒä3
+Ä
+java:S1186G"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ë¥À½8ËÛÒä3J$14096013-d5bc-4567-aaee-966a300d2420
+ˆ	java:S107"AConstructor has 8 parameters, which is greater than 7 authorized.(Æ‰‚šüÿÿÿÿ8¨ÌûÕÿ3J$e9fc540e-5d6c-485a-a9c8-6b418f959cd1
+„	java:S107 "BConstructor has 11 parameters, which is greater than 7 authorized.(ö€óí8©ÌûÕÿ3J$865ed844-d6e0-4a86-b8b4-7e96e1a6ad39
+„	java:S107,"BConstructor has 11 parameters, which is greater than 7 authorized.(Óıôê8©ÌûÕÿ3J$ea2edbfb-3591-41b4-8b72-e5aa924e5bbe
+´
+java:S1172,"qRemove these unused method parameters "lucifer", "i", "b", "v", "i1", "i2", "b1", "i3", "i4", "temporadas", "i5".(Óıôê8»ÌûÕÿ3J$b878936f-b6e4-4d0b-9128-2e8b6e036e57
+m	java:S106<"+Replace this use of System.out by a logger.(º†ñÂ8ÓÛÒä3J$86562470-5588-4b2a-911b-0d82db2d43dc
+m	java:S106="+Replace this use of System.out by a logger.(–‡¢ª8ÔÛÒä3J$19c3a2cb-75b9-4b23-a620-66a150155979
+r	java:S106>"+Replace this use of System.out by a logger.(ã¿¬÷ıÿÿÿÿ8ÔÛÒä3J$e8933c2a-825a-4bf7-87c8-e10eeef7fadf
+r	java:S106?"+Replace this use of System.out by a logger.(ëË‚Íşÿÿÿÿ8ÔÛÒä3J$dfb222cf-3c0e-4005-b38e-1d54ab63bdef
+m	java:S106A"+Replace this use of System.out by a logger.(ñ·‘×8ÕÛÒä3J$0d85c0b2-280d-441e-bd4c-4fa440c73cc0
+m	java:S106C"+Replace this use of System.out by a logger.(³‹ñø8ÕÛÒä3J$79972dc3-ae75-40ba-80ea-37e629e00bc6
