@@ -1,0 +1,8 @@
+
+~
+java:S1854";Remove this useless assignment to local variable "contato".(ÓëÜ³8ã¶ÿø4J$fb2faa6e-d412-43c3-b68f-b5444bff1c50
+m	java:S106"+Replace this use of System.out by a logger.(§†8È¬€ù4J$bf4a1071-0f0c-4964-91dd-d9b7974b92fa
+r	java:S106"+Replace this use of System.out by a logger.(‘õ¼©ùÿÿÿÿ8€Áù4J$467c30cf-c8d4-4d73-aa3e-ab4893a38182
+m	java:S106"+Replace this use of System.out by a logger.(Ä°ã8€Áù4J$2e1fddf8-8ef0-46c3-92e7-84b92b18681f
+m	java:S106"+Replace this use of System.out by a logger.(ÊÄ‚ğ8˜Ú‡ù4J$43630482-91d6-4cbd-88e1-e583848eeedf
+X	java:S125"<This block of commented-out lines of code should be removed.(Œ©Å8—ø‘ù4

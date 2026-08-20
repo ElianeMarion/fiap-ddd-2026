@@ -1,0 +1,6 @@
+
+	java:S1128"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ä½îø4J$7d31a9fe-ef94-42ed-9106-5018efffe231
+—
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ØÅé˜şÿÿÿÿ8÷½îø4J$1954da11-3033-48ca-99e6-098d98c25a5a
+b
+java:S6905*"Don't use the query "SELECT *".(åûÛæ8‹¾îø4J$fb58fac1-4830-44b0-a8e1-283705dad880

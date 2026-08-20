@@ -10,3 +10,20 @@ insert into tbl_contato (ID_CONTATO,NOME_CONTATO,
 CELULAR_CONTATO,EMAIL_CONTATO,INSTAGRAM,TIPO)
 values(1, 'Eliane',
 '119898988','emarion@fiap',null, null);
+
+
+--CRUD - C: Create -> INSERT INTO
+-- INSERT INTO TABELA (CAMPOS) VALUES (VALORES);
+insert into tbl_contato (ID_CONTATO,NOME_CONTATO, CELULAR_CONTATO,EMAIL_CONTATO,INSTAGRAM,TIPO)
+values(1, 'Eliane', '119898988','emarion@fiap',null, null);
+
+--READ: SELECT
+-- SELECT CAMPOS FROM TABELA
+select * from TBL_CONTATO;
+SELECT nome_contato, email_contato, celular_contato FROM TBL_CONTATO;
+
+-- QUANDO EU PRECISO FAZER UMA CONSULTA COM FILTRO USAMOS O WHERE
+SELECT* FROM TBL_CONTATO WHERE id_contato = 1;
+
+
+select * from TBL_CONTATO
