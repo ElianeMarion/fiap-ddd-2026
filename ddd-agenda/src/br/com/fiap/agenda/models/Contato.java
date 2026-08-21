@@ -10,8 +10,7 @@ public class Contato {
 
     @Override
     public String toString() {
-        return "Contato: " +
-                "\nNome:  " + nome +
+        return  "\nNome:  " + nome +
                 "- celular: " + celular +
                 "- email: " + email +
                 "- instagram: " + instagram +
