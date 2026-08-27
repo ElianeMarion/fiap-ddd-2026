@@ -1,6 +1,7 @@
 package br.com.fiap.agenda.dao;
 
 import br.com.fiap.agenda.models.Contato;
+import br.com.fiap.agenda.models.Endereco;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,13 +14,14 @@ import java.util.List;
 public class ContatoDAO {
     private Connection conexao;
     //CRUD -> Create (cadastro) : SQL: insert
+    //codigo se refere ao código do endereço
     public void cadastrar(Contato contato){
         conexao = ConnectionFactory.obterConexao();
         PreparedStatement comandoSql = null;
         try{
             String sql = "insert into tbl_contato (ID_CONTATO,NOME_CONTATO," +
-                    "CELULAR_CONTATO,EMAIL_CONTATO,INSTAGRAM,TIPO)" +
-                    "values(?, ?,?,?,?, ?)";
+                    "CELULAR_CONTATO,EMAIL_CONTATO,INSTAGRAM,TIPO, CODIGO)" +
+                    "values(?, ?,?,?,?, ?,?)";
             comandoSql = conexao.prepareStatement(sql);
             comandoSql.setInt(1, contato.getId());
             comandoSql.setString(2, contato.getNome());
@@ -27,6 +29,7 @@ public class ContatoDAO {
             comandoSql.setString(4, contato.getEmail());
             comandoSql.setString(5, contato.getInstagram());
             comandoSql.setString(6, contato.getTipo());
+            comandoSql.setInt(7, contato.getEndereco().getCodigo());
             comandoSql.executeUpdate();
             comandoSql.close();
             conexao.close();
@@ -37,9 +40,11 @@ public class ContatoDAO {
 
     //CRUD - R: READ - SQL: SELECT
     public Contato buscarPorId(int id){
+
         conexao = ConnectionFactory.obterConexao();
         PreparedStatement ps = null;
         Contato contato = new Contato();
+        EnderecoDAO enderecoDAO = new EnderecoDAO();
         try{
             ps = conexao.prepareStatement("select * from TBL_CONTATO where ID_CONTATO = ?");
             ps.setInt(1, id);
@@ -51,6 +56,11 @@ public class ContatoDAO {
                 contato.setEmail(rs.getString(4));
                 contato.setInstagram(rs.getString(5));
                 contato.setTipo(rs.getString(6));
+                int codigo = rs.getInt(7);
+                Endereco endereco = new Endereco();
+                endereco = enderecoDAO.buscarPorId(codigo);
+                contato.setEndereco(endereco);
+
             }
             ps.close();
             conexao.close();

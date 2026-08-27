@@ -7,6 +7,7 @@ public class Contato {
     private String email;
     private String instagram;
     private String tipo;
+    private Endereco endereco; //Relacionamento entre objetos
 
     @Override
     public String toString() {
@@ -14,9 +15,17 @@ public class Contato {
                 "- celular: " + celular +
                 "- email: " + email +
                 "- instagram: " + instagram +
-                "- tipo:" + tipo;
+                "- tipo:" + tipo +
+                "- " + endereco;
     }
 
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
     public int getId() {
         return id;
     }

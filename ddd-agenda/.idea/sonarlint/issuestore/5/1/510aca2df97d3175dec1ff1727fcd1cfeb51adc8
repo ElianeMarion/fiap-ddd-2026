@@ -1,10 +1,14 @@
 
-r	java:S106"+Replace this use of System.out by a logger.(à¥¨úÿÿÿÿ8Ö¨÷÷4J$b492de2b-5b1e-422f-b34d-151cb8443eb0
-r	java:S106"+Replace this use of System.out by a logger.(‘õ¼©ùÿÿÿÿ8Ö¨÷÷4J$66891942-da10-41ff-8ba4-623986aad6db
-m	java:S106"+Replace this use of System.out by a logger.(Ö‘¦ì8×¨÷÷4J$89e05aeb-459e-488f-8c5a-80963a1379f5
-r	java:S106"+Replace this use of System.out by a logger.(ƒõÕ£ùÿÿÿÿ8×¨÷÷4J$a3150cfb-b6ef-4c4a-888e-d653c0954964
-m	java:S106"+Replace this use of System.out by a logger.(˜–Œ²8×¨÷÷4J$0a260b87-2b65-433d-a92f-a0eb72459987
-l	java:S106"+Replace this use of System.out by a logger.(‘p8×¨÷÷4J$f681591a-dab9-4139-8e83-03144439fd9c
-m	java:S106"+Replace this use of System.out by a logger.(İ×î©8×¨÷÷4J$52cd6f7c-2880-4f27-8184-9aa057dcb572
-m	java:S106"+Replace this use of System.out by a logger.(ìã™ˆ8Ù¨÷÷4J$2b12c85b-5598-41ad-abc6-974d018acc03
-r	java:S106 "+Replace this use of System.out by a logger.(€ÉÀÑûÿÿÿÿ8¿åø÷4J$d85a9f34-3776-4b23-9574-b5b34ab94971
+
+java:S1854#"<Remove this useless assignment to local variable "endereco".(ı÷½·8ŒÍ×™„4J$6f222d71-1214-4f24-86f1-de588544da42
+r	java:S106"+Replace this use of System.out by a logger.(à¥¨úÿÿÿÿ8Í×™„4J$7af68169-74f1-4b7b-b20b-dee6804468d2
+r	java:S106"+Replace this use of System.out by a logger.(‘õ¼©ùÿÿÿÿ8Í×™„4J$70475539-b1b4-4976-ba6b-1d8999597189
+m	java:S106"+Replace this use of System.out by a logger.(Ö‘¦ì8Í×™„4J$cfd9264d-3f88-446e-b43c-627b5e903d11
+r	java:S106"+Replace this use of System.out by a logger.(ƒõÕ£ùÿÿÿÿ8Í×™„4J$47153895-8d90-4a23-ac29-ffe16ab06b81
+m	java:S106"+Replace this use of System.out by a logger.(˜–Œ²8Í×™„4J$a9095e79-88d9-4415-8dff-fc96d5d37e8c
+l	java:S106"+Replace this use of System.out by a logger.(‘p8’Í×™„4J$8d77ba23-8d0b-4fbd-815e-0a7cc48feacc
+m	java:S106"+Replace this use of System.out by a logger.(İ×î©8’Í×™„4J$8bb26601-1074-4b03-9812-2eeeb4bc2ede
+m	java:S106"+Replace this use of System.out by a logger.(ìã™ˆ8’Í×™„4J$08f49a20-7ede-4c4b-9970-f4bf0cbc3aa6
+m	java:S106 "+Replace this use of System.out by a logger.(²öÔı8’Í×™„4J$2d43992a-8274-4c13-9129-b529c70657d9
+r	java:S106&"+Replace this use of System.out by a logger.(ê›¥Òşÿÿÿÿ8”Í×™„4J$9c33e202-f8af-4b51-8505-a6a73b941381
+r	java:S106+"+Replace this use of System.out by a logger.(€ÉÀÑûÿÿÿÿ8ıĞÛ™„4J$f2565f3d-137c-417d-9b4c-adb25d81869c

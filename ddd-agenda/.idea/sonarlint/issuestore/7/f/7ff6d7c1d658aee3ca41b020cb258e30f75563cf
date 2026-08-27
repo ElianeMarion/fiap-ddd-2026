@@ -1,8 +1,8 @@
 
 ~
-java:S1854";Remove this useless assignment to local variable "contato".(ÓëÜ³8ã¶ÿø4J$fb2faa6e-d412-43c3-b68f-b5444bff1c50
-m	java:S106"+Replace this use of System.out by a logger.(§†8È¬€ù4J$bf4a1071-0f0c-4964-91dd-d9b7974b92fa
-r	java:S106"+Replace this use of System.out by a logger.(‘õ¼©ùÿÿÿÿ8€Áù4J$467c30cf-c8d4-4d73-aa3e-ab4893a38182
-m	java:S106"+Replace this use of System.out by a logger.(Ä°ã8€Áù4J$2e1fddf8-8ef0-46c3-92e7-84b92b18681f
-m	java:S106"+Replace this use of System.out by a logger.(ÊÄ‚ğ8˜Ú‡ù4J$43630482-91d6-4cbd-88e1-e583848eeedf
-X	java:S125"<This block of commented-out lines of code should be removed.(Œ©Å8—ø‘ù4
+java:S1854";Remove this useless assignment to local variable "contato".(ÓëÜ³8ã¶ÿø4J$38e9cb26-ad2d-4e49-a1d4-67abdbaae02c
+m	java:S106"+Replace this use of System.out by a logger.(§†8È¬€ù4J$177a35b1-f46d-4e5c-a208-8d59d522d62c
+r	java:S106"+Replace this use of System.out by a logger.(‘õ¼©ùÿÿÿÿ8€Áù4J$1e21d425-6fb1-43c2-ab06-d32ad25a21ab
+m	java:S106"+Replace this use of System.out by a logger.(Ä°ã8€Áù4J$c19eefc8-336b-49d4-89e5-2c452a862e1b
+m	java:S106"+Replace this use of System.out by a logger.(ÊÄ‚ğ8˜Ú‡ù4J$5a481b22-861b-4780-a7cc-202e632545fa
+~	java:S125"<This block of commented-out lines of code should be removed.(Œ©Å8—ø‘ù4J$49454439-08b4-4cd2-b6bb-65f2c3af1399

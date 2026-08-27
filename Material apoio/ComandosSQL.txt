@@ -44,6 +44,26 @@ DELETE FROM TBL_CONTATO  WHERE ID_CONTATO = 1
 
 
 
+Create table endereco_agenda(
+codigo numeric(4) primary Key not null,
+logradouro varchar2(60),
+cep varchar2 (8) not null,
+bairro varchar2 (20),
+cidade varchar2 (30),
+estado varchar2 (20),
+uf varchar2 (2),
+numero varchar2(10),
+complemento varchar2(50)
+);
+
+alter table TBL_CONTATO add codigo numeric(4) references endereco_agenda(codigo);
+SELECT * FROM TBL_CONTATO;
+UPDATE TBL_CONTATO SET CODIGO = 1 WHERE ID_CONTATO = 2;
+
+Select * from endereco_agenda;
+
+
+
 
 
 

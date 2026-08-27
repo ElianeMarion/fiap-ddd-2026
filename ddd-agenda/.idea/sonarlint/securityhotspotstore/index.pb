@@ -11,3 +11,9 @@ a
 1src/br/com/fiap/agenda/tests/TesteBuscaPorId.java,7\f\7ff6d7c1d658aee3ca41b020cb258e30f75563cf
 a
 1src/br/com/fiap/agenda/dao/ConnectionFactory.java,a\8\a885fd18c310e212e54aabe180ae57172c40baa5
+[
++src/br/com/fiap/agenda/models/Endereco.java,b\b\bbcbef258a161762977890c6b0d30fe5b713dd52
+[
++src/br/com/fiap/agenda/dao/EnderecoDAO.java,8\4\8402bb6a26eb06d37d5b23fff6eb0eefd5c9ed06
+_
+/src/br/com/fiap/agenda/tests/TesteEndereco.java,e\5\e57bb8eb20461151cf9c63dd655a46f7820a67a9
