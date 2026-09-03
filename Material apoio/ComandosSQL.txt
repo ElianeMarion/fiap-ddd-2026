@@ -63,7 +63,39 @@ UPDATE TBL_CONTATO SET CODIGO = 1 WHERE ID_CONTATO = 2;
 Select * from endereco_agenda;
 
 
+create table tbl_contato_endereco_entrega(
+    id_contato NUMERIC(4), 
+    id_endereco numeric(4),
+    constraint pk_enderecos_entrega primary key (id_contato, id_endereco),
+    constraint fk_contato FOREIGN key (id_contato) REFERENCES tbl_contato(id_contato),
+    constraint fk_endereco FOREIGN key (id_endereco) REFERENCES endereco_agenda(codigo)
+);
 
+select * from endereco_agenda;
 
+INSERT INTO endereco_agenda
+(codigo, logradouro, cep, bairro, cidade, estado, uf, numero, complemento)
+VALUES
+(3, 'Rua das Flores', '01310000', 'Bela Vista', 'São Paulo', 'São Paulo', 'SP', '100', 'Apto 12');
+
+INSERT INTO endereco_agenda
+(codigo, logradouro, cep, bairro, cidade, estado, uf, numero, complemento)
+VALUES
+(4, 'Avenida Paulista', '01311000', 'Bela Vista', 'São Paulo', 'São Paulo', 'SP', '1500', 'Sala 305');
+
+INSERT INTO endereco_agenda
+(codigo, logradouro, cep, bairro, cidade, estado, uf, numero, complemento)
+VALUES
+(5, 'Rua Augusta', '01305000', 'Consolação', 'São Paulo', 'São Paulo', 'SP', '800', NULL);
+
+INSERT INTO endereco_agenda
+(codigo, logradouro, cep, bairro, cidade, estado, uf, numero, complemento)
+VALUES
+(6, 'Rua Oscar Freire', '05409010', 'Pinheiros', 'São Paulo', 'São Paulo', 'SP', '450', 'Casa');
+
+INSERT INTO endereco_agenda
+(codigo, logradouro, cep, bairro, cidade, estado, uf, numero, complemento)
+VALUES
+(7, 'Avenida Brasil', '01431000', 'Jardins', 'São Paulo', 'São Paulo', 'SP', '250', 'Bloco B');
 
 

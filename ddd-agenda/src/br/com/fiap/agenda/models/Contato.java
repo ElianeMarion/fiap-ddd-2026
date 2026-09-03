@@ -1,5 +1,8 @@
 package br.com.fiap.agenda.models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Contato {
     private int id;
     private String nome;
@@ -9,6 +12,7 @@ public class Contato {
     private String tipo;
     private Endereco endereco; //Relacionamento entre objetos
 
+    private List<Endereco> enderecosEntrega = new ArrayList<>(); //Representando a relação N:N
     @Override
     public String toString() {
         return  "\nNome:  " + nome +
@@ -17,6 +21,14 @@ public class Contato {
                 "- instagram: " + instagram +
                 "- tipo:" + tipo +
                 "- " + endereco;
+    }
+
+    public List<Endereco> getEnderecosEntrega() {
+        return enderecosEntrega;
+    }
+
+    public void setEnderecosEntrega(List<Endereco> enderecosEntrega) {
+        this.enderecosEntrega = enderecosEntrega;
     }
 
     public Endereco getEndereco() {

@@ -17,3 +17,5 @@ a
 +src/br/com/fiap/agenda/dao/EnderecoDAO.java,8\4\8402bb6a26eb06d37d5b23fff6eb0eefd5c9ed06
 _
 /src/br/com/fiap/agenda/tests/TesteEndereco.java,e\5\e57bb8eb20461151cf9c63dd655a46f7820a67a9
+n
+>src/br/com/fiap/agenda/tests/TesteCadastroContatoEntregas.java,e\d\ed871403a3e7a4fcd7c217580efd140f6027f1f2

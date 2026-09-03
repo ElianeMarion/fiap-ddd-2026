@@ -1,11 +1,18 @@
 
-	java:S112D"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8†ê¹™„4J$23bc824e-7e51-4bdb-b646-5a725ba03d28
-	java:S112\"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ˆê¹™„4J$03192432-a8e5-4423-bbd4-f344949e0e0d
-	java:S112k"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ˆê¹™„4J$09bbc8a1-76e5-4607-bee5-cd6d69aa85a3
-	java:S112ƒ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ˆê¹™„4J$ec42061e-16e2-45c9-b657-7b974d870ab8
+	java:S112u"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Û×¤¹†4J$dadab11b-4ddd-4ff0-9518-574a8d9e1bad
+	java:S112¡"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Û×¤¹†4J$be45d582-81ee-44d7-bb3a-a2acbedcec99
+	java:S112¿"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Û×¤¹†4J$f1ce9a79-db78-48af-b9dd-5d3ba330b3df
+	java:S112Î"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Û×¤¹†4J$83b3223b-e709-43e6-b9ab-0ffc172a0ade
+	java:S112æ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Û×¤¹†4J$5aaafee0-9a27-47c8-adae-fc790fc1e44a
+—
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ØÅé˜şÿÿÿÿ8ì×¤¹†4J$8c272870-0012-44d2-ab08-9bd02e99dcb3
 
-java:S1854<"<Remove this useless assignment to local variable "endereco".(ı÷½·8 ê¹™„4J$cb080c90-4352-4d92-88e3-37a990b94776
+java:S1854m"<Remove this useless assignment to local variable "endereco".(ı÷½·8õ×¤¹†4J$aca429af-f69f-4b39-900d-f003daaafd0e
 b
-java:S69051"Don't use the query "SELECT *".(åûÛæ8¢ê¹™„4J$86ec948c-8c70-47ab-9050-989d033cf371
-b
-java:S6905t"Don't use the query "SELECT *".(»¡Œ€8ªê¹™„4J$c489184d-e337-4c06-89ab-d03312b715c2
+java:S6905b"Don't use the query "SELECT *".(åûÛæ8÷×¤¹†4J$9bdca0d7-c532-41a9-8e3a-696eeca1a26a
+h
+java:S6905"Don't use the query "SELECT *".(‘õşûÿÿÿÿ8û×¤¹†4J$d02aab85-7f54-4863-9da5-1dbb2ea67430
+c
+java:S6905×"Don't use the query "SELECT *".(»¡Œ€8Ø¤¹†4J$eb179476-37e8-4e94-9c4a-e334a823cfce
+˜
+java:S6912D"VUse "addBatch" and "executeBatch" to execute multiple SQL statements in a single call.(ÊŠ¢8ƒØ¤¹†4J$67e41829-5758-493b-be44-7f7de87e8637
