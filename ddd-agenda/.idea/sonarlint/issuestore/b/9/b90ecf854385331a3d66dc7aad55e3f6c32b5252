@@ -4,8 +4,20 @@
 	java:S112¿"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Û×¤¹†4J$f1ce9a79-db78-48af-b9dd-5d3ba330b3df
 	java:S112Î"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Û×¤¹†4J$83b3223b-e709-43e6-b9ab-0ffc172a0ade
 	java:S112æ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Û×¤¹†4J$5aaafee0-9a27-47c8-adae-fc790fc1e44a
+r
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‘õşûÿÿÿÿ8£âº×ˆ4
+q
+java:S20952"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ØÅé˜şÿÿÿÿ8¤âº×ˆ4
 —
 java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ØÅé˜şÿÿÿÿ8ì×¤¹†4J$8c272870-0012-44d2-ab08-9bd02e99dcb3
+r
+java:S2095‘"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¸œÅºÿÿÿÿÿ8£âº×ˆ4
+q
+java:S2095@"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ˆ¿ı½şÿÿÿÿ8£âº×ˆ4
+Y
+java:S2589R"7Remove this expression which always evaluates to "true"(ŠØÃ ùÿÿÿÿ8§âº×ˆ4
+Z
+java:S2589¤"7Remove this expression which always evaluates to "true"(ŠØÃ ùÿÿÿÿ8©âº×ˆ4
 
 java:S1854m"<Remove this useless assignment to local variable "endereco".(ı÷½·8õ×¤¹†4J$aca429af-f69f-4b39-900d-f003daaafd0e
 b

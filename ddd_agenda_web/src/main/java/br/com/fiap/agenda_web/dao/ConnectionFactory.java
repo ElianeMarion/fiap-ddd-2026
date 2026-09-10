@@ -1,4 +1,4 @@
-package br.com.fiap.agenda.dao;
+package br.com.fiap.agenda_web.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,7 +10,7 @@ public class ConnectionFactory {
         try{
             conexao = DriverManager.getConnection(
                     "jdbc:oracle:thin:@oracle.fiap.com.br:1521:orcl",
-                    "pf1551", "senha");
+                    "pf1551", "fiap26");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
