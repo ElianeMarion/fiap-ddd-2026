@@ -26,4 +26,16 @@ public class EnderecoController {
         enderecoDAO.inserir(endereco);
     }
 
+    @PutMapping("/{id}")
+    public void atualizar(@PathVariable int id,
+                          @RequestBody Endereco endereco){
+        enderecoDAO.alterar(endereco);
+    }
+    @DeleteMapping("/{id}")
+    public void excluir(@PathVariable int id){
+        enderecoDAO.excluir(id);
+    }
+
+
+
 }
