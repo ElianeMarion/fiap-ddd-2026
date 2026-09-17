@@ -3,12 +3,7 @@ package br.com.fiap.agenda_web.service;
 
 import br.com.fiap.agenda_web.dao.EnderecoDAO;
 import br.com.fiap.agenda_web.models.Endereco;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
