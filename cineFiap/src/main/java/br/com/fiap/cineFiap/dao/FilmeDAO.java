@@ -27,20 +27,6 @@ public class FilmeDAO {
      * de dados ou durante a execução do comando SQL
      * */
     public void cadastrar(Filme filme){
-
-        if (filme.getDuracao() <= 0){
-            System.out.println("ERRO: A duração deve ser maior que zero.");
-            return;
-        }
-        if (filme.getClassificacao() == null ) {
-            System.out.println("ERRO: A classificação indicativa é obrigatória");
-            return;
-        }
-        if (filme.getCategoria() == null ) {
-            System.out.println("ERRO: A categoria é obrigatória");
-            return;
-        }
-
         conexao = ConnectionFactory.obterConexao();
         PreparedStatement comandoSql = null;
 
@@ -138,7 +124,7 @@ public class FilmeDAO {
 
         try {
             ps = conexao.prepareStatement("select * from TBL_FILME where CHK_EM_CARTAZ = ?");
-            ps.setString(1, "SIM");
+            ps.setString(1, "S");
             ResultSet rs = ps.executeQuery();
 
             while(rs.next()){

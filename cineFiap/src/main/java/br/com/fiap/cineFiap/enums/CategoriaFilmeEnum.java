@@ -1,7 +1,7 @@
 package br.com.fiap.cineFiap.enums;
 
 public enum CategoriaFilmeEnum {
-    ACAO,
+    Acao,
     AVENTURA,
     COMEDIA,
     DRAMA,
@@ -12,7 +12,7 @@ public enum CategoriaFilmeEnum {
     FANTASIA,
     GUERRA,
     FAROESTE,
-    ANIMACAO,
+    Animacao,
     MUSICAL,
     POLICIAL,
     DOCUMENTARIO;

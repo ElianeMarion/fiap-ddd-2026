@@ -1,7 +1,7 @@
 package br.com.fiap.cineFiap.enums;
 
 public enum ClassificacaoIndicativaEnum {
-    LIVRE,
+    Livre,
     A10,
     A12,
     A13,

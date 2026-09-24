@@ -22,4 +22,5 @@ public class Filme {
     private ClassificacaoIndicativaEnum classificacao;
     private SimNaoEnum emCartaz;
 
+
 }
