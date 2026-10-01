@@ -1,5 +1,8 @@
-package br.com.fiap.cineFiap.resource;
+package br.com.fiap.cineFiap.controller;
 
+import br.com.fiap.cineFiap.dto.FilmeRequestDTO;
+import br.com.fiap.cineFiap.dto.FilmeResponseDTO;
+import br.com.fiap.cineFiap.mapper.FilmeMapper;
 import br.com.fiap.cineFiap.models.Filme;
 import br.com.fiap.cineFiap.service.FilmeService;
 import org.springframework.http.HttpStatus;
@@ -8,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/filmes")
@@ -19,22 +23,25 @@ public class FilmeController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Filme> buscarPorId(@PathVariable Integer id){
+    public ResponseEntity<FilmeResponseDTO> buscarPorId(@PathVariable Integer id){
         var filme = service.buscarPorId(id);
         if(filme.getId() != null)
-            return ResponseEntity.ok(filme);
+            return ResponseEntity.ok(FilmeMapper.toDTO(filme));
         return ResponseEntity.notFound().build();
-
     }
     @GetMapping
-    public ResponseEntity<List<Filme>> filmesEmCartaz(){
-        return ResponseEntity.ok(service.filmeEmCartaz());
+    public ResponseEntity<List<FilmeResponseDTO>> filmesEmCartaz(){
+        var lista = service.filmeEmCartaz()
+                .stream()
+                .map(FilmeMapper::toDTO)
+                .toList();
+        return ResponseEntity.ok(lista);
     }
 
     @PostMapping
-    public ResponseEntity<String> cadastrar(@RequestBody Filme filme){
+    public ResponseEntity<String> cadastrar(@RequestBody FilmeRequestDTO filme){
         try{
-            service.cadastrar(filme);
+            service.cadastrar(FilmeMapper.toEntity(filme));
 
             return ResponseEntity.status(HttpStatus.CREATED).body("Filme cadastrado com sucesso!");
         }catch (IllegalArgumentException e){
@@ -52,10 +59,10 @@ public class FilmeController {
     }
     @PutMapping("/{id}")
     public ResponseEntity<Void> alterar(@PathVariable Integer id,
-                                        @RequestBody Filme objeto){
+                                        @RequestBody FilmeRequestDTO objeto){
         var filme = service.buscarPorId(id);
         if(Objects.equals(filme.getId(), objeto.getId())) {
-            service.alterar(objeto);
+            service.alterar(FilmeMapper.toEntity(objeto));
             return ResponseEntity.ok().build();
         }
         return ResponseEntity.notFound().build();

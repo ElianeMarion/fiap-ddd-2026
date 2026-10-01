@@ -15,6 +15,7 @@ public class ContatoService {
     }
 
     public List<Contato> listar(){
+
         return contatoDAO.listar();
     }
 
