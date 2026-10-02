@@ -1,6 +1,8 @@
 package br.com.fiap.agenda_web.mapper;
 
+import br.com.fiap.agenda_web.dto.ContatoRequest;
 import br.com.fiap.agenda_web.dto.ContatoRequestDTO;
+import br.com.fiap.agenda_web.dto.ContatoResponse;
 import br.com.fiap.agenda_web.dto.ContatoResponseDTO;
 import br.com.fiap.agenda_web.models.Contato;
 
@@ -28,4 +30,27 @@ public class ContatoMapper {
         dto.setEndereco(contato.getEndereco());
         return dto;
     }
+//Conversão usando record
+    public static ContatoResponse toRecordDTO(Contato contato) {
+        return new ContatoResponse(
+                contato.getId(),
+                contato.getNome(),
+                contato.getCelular(),
+                contato.getEmail(),
+                contato.getInstagram(),
+                contato.getTipo(),
+                contato.getEndereco()
+        );
+    }
+    public static Contato recordToEntity (ContatoRequest dto) {
+        Contato contato = new Contato();
+        contato.setId(dto.id());
+        contato.setNome(dto.nome());
+        contato.setEmail(dto.email());
+        contato.setInstagram(dto.instagram());
+        contato.setTipo(dto.tipo());
+        contato.setEndereco(dto.endereco());
+        return contato;
+    }
+
 }

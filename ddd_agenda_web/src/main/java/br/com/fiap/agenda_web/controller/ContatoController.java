@@ -1,6 +1,7 @@
 package br.com.fiap.agenda_web.controller;
 
 import br.com.fiap.agenda_web.dto.ContatoRequestDTO;
+import br.com.fiap.agenda_web.dto.ContatoResponse;
 import br.com.fiap.agenda_web.dto.ContatoResponseDTO;
 import br.com.fiap.agenda_web.mapper.ContatoMapper;
 import br.com.fiap.agenda_web.models.Contato;
@@ -16,10 +17,10 @@ public class ContatoController {
     private ContatoService contatoService = new ContatoService();
 
     @GetMapping
-    public List<ContatoResponseDTO> listar(){
+    public List<ContatoResponse> listar(){
         return contatoService.listar()
                 .stream()
-                .map(ContatoMapper::toDTO)
+                .map(ContatoMapper::toRecordDTO)
                 .toList();
     }
     @GetMapping("/{id}")
