@@ -1,7 +1,6 @@
 package br.com.fiap.cineFiap.controller;
 
-import br.com.fiap.cineFiap.dto.FilmeRequestDTO;
-import br.com.fiap.cineFiap.dto.FilmeResponseDTO;
+import br.com.fiap.cineFiap.dto.*;
 import br.com.fiap.cineFiap.mapper.FilmeMapper;
 import br.com.fiap.cineFiap.models.Filme;
 import br.com.fiap.cineFiap.service.FilmeService;
@@ -12,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
-
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/filmes")
 public class FilmeController {
@@ -23,26 +22,25 @@ public class FilmeController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<FilmeResponseDTO> buscarPorId(@PathVariable Integer id){
+    public ResponseEntity<FilmeResponse> buscarPorId(@PathVariable Integer id){
         var filme = service.buscarPorId(id);
         if(filme.getId() != null)
-            return ResponseEntity.ok(FilmeMapper.toDTO(filme));
+            return ResponseEntity.ok(FilmeMapper.toRecordDTO(filme));
         return ResponseEntity.notFound().build();
     }
     @GetMapping
-    public ResponseEntity<List<FilmeResponseDTO>> filmesEmCartaz(){
+    public ResponseEntity<List<FilmeResponseCardsDto>> filmesEmCartaz(){
         var lista = service.filmeEmCartaz()
                 .stream()
-                .map(FilmeMapper::toDTO)
+                .map(FilmeMapper::toCardDTO)
                 .toList();
         return ResponseEntity.ok(lista);
     }
 
     @PostMapping
-    public ResponseEntity<String> cadastrar(@RequestBody FilmeRequestDTO filme){
+    public ResponseEntity<String> cadastrar(@RequestBody FilmeRequest filme){
         try{
-            service.cadastrar(FilmeMapper.toEntity(filme));
-
+            service.cadastrar(FilmeMapper.dtoToEntity(filme));
             return ResponseEntity.status(HttpStatus.CREATED).body("Filme cadastrado com sucesso!");
         }catch (IllegalArgumentException e){
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Erro ao cadastrar o filme: " + e.getMessage());
@@ -59,10 +57,10 @@ public class FilmeController {
     }
     @PutMapping("/{id}")
     public ResponseEntity<Void> alterar(@PathVariable Integer id,
-                                        @RequestBody FilmeRequestDTO objeto){
+                                        @RequestBody FilmeRequest objeto){
         var filme = service.buscarPorId(id);
-        if(Objects.equals(filme.getId(), objeto.getId())) {
-            service.alterar(FilmeMapper.toEntity(objeto));
+        if(Objects.equals(filme.getId(), objeto.id())) {
+            service.alterar(FilmeMapper.dtoToEntity(objeto));
             return ResponseEntity.ok().build();
         }
         return ResponseEntity.notFound().build();
