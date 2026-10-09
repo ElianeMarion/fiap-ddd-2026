@@ -10,8 +10,10 @@ import java.util.List;
 @Service
 public class EnderecoService {
     private final EnderecoDAO enderecoDAO;
+    private final ViaCepService viaCepService;
 
-    public EnderecoService() {
+    public EnderecoService(ViaCepService viaCepService) {
+        this.viaCepService = viaCepService;
         enderecoDAO = new EnderecoDAO();
     }
 
@@ -19,14 +21,29 @@ public class EnderecoService {
         return enderecoDAO.buscarTodosEnderecos();
     }
 
+    public Endereco consultarCep(String cep){
+        var enderecoDto = viaCepService.consultarCep(cep);
+        var endereco = new Endereco();
+        endereco.setCep(enderecoDto.cep());
+        endereco.setUf(enderecoDto.uf());
+        endereco.setBairro(enderecoDto.bairro());
+        endereco.setRua(enderecoDto.logradouro());
+        endereco.setCidade(enderecoDto.localidade());
+        endereco.setEstado(enderecoDto.estado());
+        return endereco;
+    }
     public Endereco buscarPorId(int id){
         var endereco = enderecoDAO.buscarPorId(id);
         return endereco;
     }
     public void cadastrar( Endereco endereco){
-        if(endereco.getCep() != null )
-            enderecoDAO.inserir(endereco);
-        else
+        if(endereco.getCep() != null ) {
+            var novoEndereco = consultarCep(endereco.getCep());
+            novoEndereco.setNumero(endereco.getNumero());
+            novoEndereco.setComplemento(endereco.getComplemento());
+            novoEndereco.setCodigo(endereco.getCodigo());
+            enderecoDAO.inserir(novoEndereco);
+        }else
             throw new RuntimeException("Endereço incompleto");
     }
 
